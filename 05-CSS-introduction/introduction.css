@@ -1,0 +1,67 @@
+/*  
+    CSS rule consists of 
+    --------------------------
+    selector {
+      property: value;
+    }
+    --------------------------
+    The part inside the curly braces is the declaration.
+*/
+
+/* Change the body background color */
+body {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: 400;
+  
+  font-size: 100%;
+  
+  background-color: #eeeeee;
+}
+
+/* Selects all paragraphs */
+p {
+  background-color: #ffffff;
+} 
+
+/* Selects all elements with the class name notice */
+.notice {
+  /* Different ways to define color */
+  color: red;               /* keyword */
+  color: #ff0000;           /* hex code */
+  color: #f00;              /* hex shorthand */
+  color: rgb(255,0,0);      /* rgb */
+  color: rgba(255,0,0,1);   /* rgba */
+  color: hsla(0,100%,50%,1);/* hsla */
+  
+  /* Text Alignment */
+  text-align: center; /* left, right, center, justify */
+  text-decoration: line-through;
+}
+
+/* Grouping selectors */
+h2, h3, h4 {
+  color: #555555;
+}
+
+h1 {
+  font-size: 46px;
+  line-height: 1em; /* equals to font size */
+}
+
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
