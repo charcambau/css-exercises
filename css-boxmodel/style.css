@@ -1,0 +1,52 @@
+body {
+  margin: 4;
+}
+
+h1,
+h2,
+h3 {
+  padding: 20px;
+  margin: 0;
+  margin-bottom: 4px;
+  /* the default box-sizing is content-box so the width is from one content edge to the other  */
+  width: 200px;
+
+  border-width: 20px;
+  border-style: solid;
+  border-color: #aaa;
+
+  /* border : 20px solid #aaa */
+
+  border-bottom-color: #999;
+
+  /* border: 0; would overwrite anything written before */
+
+  background-color: #eee;
+  color: #333;
+}
+
+h2 {
+  border-top-color: #666;
+  box-sizing: border-box;
+  /* elements width extends from 1 border edge to another */
+}
+
+h3 {
+  width: auto;
+  box-sizing: border-box;
+
+  /* If you don't write border-box, it'll make the content box that size and the border will be bigger than that */
+
+  display: inline-block;
+  /* to respect the padding and width andvertical spacing, it cannot be displayed inline */
+  /* float: left; */
+}
+
+
+p {
+  padding-left: 40px;
+  padding-right: 40px;
+
+  /* border: 1px solid red; */
+  /* float: left; */
+}
