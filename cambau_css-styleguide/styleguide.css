@@ -1,5 +1,7 @@
 /* body - general doc styling*/
 body {
+    margin: 0;
+
     background-color: rgb(235, 244, 250);
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 1em;
@@ -7,33 +9,48 @@ body {
 
 /* tag selectors - styling by tag: more specific than body*/
 h1 {
+    margin-top: 75px;
+    margin-bottom: 10px;
+
+    text-align: center;
     font-weight: 200;
     color: rgb(105, 119, 163);
     font-size: 3em;
-    text-align: center;
-    margin: 0;
-    padding:0;
 }
 
 h2 {
-    font-weight: 200;
-    font-size: 2em;
+    box-sizing: border-box;
+    margin-top: 100px;
+    margin-bottom: 0;
+
     text-align: center;
+    font-weight: 900;
+    font-size: 2em;
 }
 
 h3 {
+    margin-left: 5px;
+
     font-weight: 400;
     font-size: 1.75em;
     font-variant: small-caps;
 }
 
 h4 {
-    font-weight: 400
+    font-weight: 400;
 }
 
 p {
+    margin: 5px;
+
+    text-indent: 12px;
     font-weight: 200;
     font-size: 1em;
+}
+
+main{
+    margin-top: 60px;
+    margin-left: 10px;
 }
 
 ul li {
@@ -50,16 +67,19 @@ li, p {
 strong {
     font-weight: 400;
     color: rgb(89, 106, 145);
+    text-indent: 0;
 }
 
 em {
     font-weight: 200;
     color: rgb(255, 102, 0);
+    text-indent: 0;
+    margin: 0;
 }
 
 ol {
-    list-style-type: upper-roman;
     list-style-position: inside;
+    list-style-type: upper-roman;
 }
 
 a {
@@ -70,28 +90,108 @@ a {
 input[type=text] {
     box-sizing: border-box;
     border: none;
-    border-bottom: 2px  rgb(87, 103, 152);
-}
+    padding: 5px;
+    margin: 0;
 
-/* class selectors - styling by class: more specific than element*/
-.topnav ul {
-    list-style-type: none;
-    text-align: left;
-    padding: 0;
-}
-
-.topnav a{
-    font-weight: 600;
-    text-decoration: none;
+    border-bottom: 1px solid rgb(87, 103, 152);
+    background-color: transparent;
     color: rgb(87, 103, 152);
 }
 
-.chapters {
-    list-style-type: upper-roman;
+input[type=submit] {
+    box-sizing: border-box;
+    margin-top: 26px;
+    margin-left: 26px;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+
+    border-radius: 5px;
+    background-color: rgb(87, 103, 152);
+    color: rgb(235, 244, 250);
+    font-variant: small-caps;
+    cursor: pointer;
+
+}
+
+form {
+    box-sizing: border-box;
+    display: inline-block;
+    border: none;
+    padding-top: 10px;
+    padding-right: 40px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+
+    background-color: white;
+    border-radius: 10px;
+}
+
+form p {
+    margin-top: 25px;
+    margin-bottom: 5px;
+    margin-left: 0;
+}
+
+
+/* class selectors - styling by class: more specific than element*/
+.navbar {
+    box-sizing: border-box;
+    top: 0;
+    display: inline;
+    position: fixed;
+    padding-right: 100px;
+    padding-left: 100px;
+    margin: 0;
+    border: 100%;
+
+    width: 100%;
+    background-color: rgb(55, 66, 73);
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+
+    font-weight: 400;
+    text-decoration: none;
+    color: rgb(235, 244, 250);
+}
+
+.navbar a:hover {
+    background-color: rgb(235, 244, 250);
+    color: rgb(87, 103, 152);
+    padding: 2px;
+}
+
+.navbar ul li {
+    list-style-type: none;
 }
 
 .intro {
+    margin-top: 0;
+
+    text-align: center;
     font-style: italic;
+}
+
+.quote {
+    font-weight: 700;
+    color: rgb(87, 103, 152);
+    text-indent: 0;
+}
+
+.orderedlist {
+    text-align: center;
 }
 
 .footer-text {
@@ -102,14 +202,20 @@ input[type=text] {
 /* id selectors - styling by id: more specific than class*/
 #subtitle {
     text-align: center;
-}
-
-#contact ul {
-    list-style-type: none;
-    text-align: left;
+    color: rgb(105, 119, 163);
+    margin: 0;
     padding: 0;
 }
 
+#contact ul {
+    padding: 0;
+
+    list-style-type: none;
+    text-align: left;
+}
+
 #newsletter p {
+    margin-left: 15px;
+
     font-size: .85em;
 }
