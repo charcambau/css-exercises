@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Charlotte Cambau">
+  <link rel="stylesheet" href="cambau-exam.css">
+  <title>We Love Green</title>
+</head>
+
+<body>
+  <header>
+    <!-- I want this header to be like a banner, with the image, the heading1 and the subtitle. Under it, the nav. I put span on love to style just this word -->
+    <nav class="navBar">
+      <ul>
+        <li><a href="#first">About us</a></li>
+        <li><a href="#second">Menu</a></li>
+        <li><a href="#third">Find us</a></li>
+      </ul>
+    </nav>
+    <div id="banner">
+      <img src="img1.png" alt="image of a vegan superfood bowl." width="100%">
+      <h1 class="title">We <span id="love">Love</span> Green</h1>
+      <p class="title">For eco-friendly food lovers</p>
+    </div>
+  </header>
+
+  <main>
+    <!-- Here, The first article is the introduction, with two small sections: Who and why. It makes it clearer for me to split those into sections, they might have the same style but if not, it'll be easier to style them separately -->
+    <article id="first">
+      <section id="who">
+        <h2>Who are we?</h2>
+        <h4>Sure, cheese is great and all but wait to see what we can offer...</h4>
+        <p><span id="trust">All we ask from you is a bit of trust.</span> We'll take care of the rest. Here, we make sure our customers get delicious food from quality products. And, we do it with a smile!</p>
+        <p>You're a foodie? Good. Us too. And we're passionate about serving you tasty food that'll make you forget there's no cheese in it. <strong>That's our promise.</strong></p>
+      </section>
+
+      <section id="why">
+        <h2>Why are we doing this?</h2>
+        <p>Well, there's 3 reasons :</p>
+        <ol>
+          <li>We care for the environment, and want to help. It's bad (even <a href="https://www.nationalgeographic.com/environment/climate-change/">National Geographic</a> says so.), and if we can make it slightly better we will!</li>
+          <li>We want to make sure our customers eat healthy food, from good products and loving preparation.</li>
+          <li>And lastly, now that we have a restaurant, our life evolves around food and that's pretty cool...</li>
+        </ol>
+      </section>
+      <!-- Quick shortcut to get to the next article. Would be helpful if it was on another page for example -->
+      <p><a href="#second">Check out our food</a></p>
+    </article>
+    <!-- article2 starts : Menus. With two sections : lunch and brunch -->
+    <article id="second">
+      <h2>Our food</h2>
+      <p>2 menus</p>
+
+      <div class="menu">
+        <h3>Lunch menu</h3>
+        <p>Want lunch? Here it is.</p>
+        <!-- description list seems like the obvious choice for a menu, according to me -->
+        <dl>
+          <dt>Red Lentil Soup</dt>
+          <dd>Red lentils, organic seasonal vegetables, fresh herbs and spices.€4.99</dd>
+          <dt>Thai Peanut Noodle Salad</dt>
+          <dd>Chilled Soba noodles, carrots, red peppers, cilantro, bean sprouts, and scallions, tossed in house peanut sauce, served over mesclun greens and topped with sesame seeds. €9.50</dd>
+          <dt>Zen veggie burger</dt>
+          <dd>Red Lentil deluxe house burger with black beans, brown rice, corn, carrots, red peppers, garlic, onions, and Thousand Island dressing.€9.99</dd>
+          <dt>Greek Pizza</dt>
+          <dd>Spinach, roasted red pepper, feta cheese, olives, caramelized onions, and mozzarella on a grilled thin crust pizza shell and drizzled with balsamic glaze.€12.00</dd>
+          <dt>Tuscan Portabella Sandwich</dt>
+          <dd>Grilled portabella, roasted red pepper, caramelized onion, greens, and pesto aioli on whole wheat bread. €9.50</dd>
+        </dl>
+      </div>
+
+      <section class="menu">
+        <h3>Brunch menu</h3>
+        <p>Perfect for a chilled, sunday brunch with friends.</p>
+        <dl>
+          <dt>Benedict Florentine</dt>
+          <dd>Grilled English muffin, layered with tomato, spinach, tempeh bacon, and eggs or tofu scrambled, topped with homemade vegan Hollandaise and served with home fries.€9.00</dd>
+          <dt>Vegan Waffle</dt>
+          <dd>With soy whipped cream and fresh seasonal berries.€9.00 <em>Only available when season is appropriate.</em></dd>
+          <dt>Granola Parfait</dt>
+          <dd>Granola made of oats, pumpkin seeds, sunflower seeds, raw walnuts, almonds, coconut, cranberry, apricots, flax seeds, maple syrup, and orange juice. Served over soy vanilla yogurt. €7.99</dd>
+          <dt>Grande Nachos</dt>
+          <dd>Organic corn tortilla chips, topped with refried black beans and jalapeno jack cheese. Baked and topped with fresh Pico de Gallo, homemade vegan sour cream, fresh guacamole and sliced jalapenos. €9.99</dd>
+          <dt>Baby Spinach Salad</dt>
+          <dd>Grilled bosc pears, dried cranberries, shaved fennel and toasted hazelnuts, tossed in Sherry Wine Mustard dressing. €9.99</dd>
+        </dl>
+      </section>
+
+      <section id="form">
+        <p id="easy">We make it easy for you: Get your food delivered!</p>
+        <!-- The form, here, would be a way for the user to receive the menus via email and order food. -->
+        <form action="action-page.php">
+          <p>Name</p>
+          <input type="text" name="name" value="name"><br>
+          <p>Surname</p>
+          <input type="text" name="surname" value="surname"><br>
+          <p>Email</p>
+          <input type="email" name="email" value="email adress"><br>
+          <p>Lunch or brunch? We'll send you an email and you can choose whatever you want from it.</p>
+          <input type="radio" name="Lunch" value="Lunch">Lunch <br>
+          <input type="radio" name="Brunch" value="Brunch">Brunch <br>
+          <textarea name="notes" id="addNotes" cols="20" rows="10">Add something...</textarea> <br>
+          <input type="submit" value="submit">
+        </form>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <section id="third">
+      <h4>Contact us</h4>
+      <p>Be our friend on <a href="www.facebook.com">Facebook</a></p>
+      <p>Follow us on <a href="www.instagram.com">Instagram</a></p>
+      <p><a href="www.twitter.com">Tweet</a> us!</p>
+    </section>
+
+    <section id="copyright">
+        <p>&copy; Charlotte Cambau</p>
+    </section>
+  </footer>
+</body>
+</html>
