@@ -1,0 +1,60 @@
+ul {
+  margin: 0;
+  padding: 0;
+  border: 20px solid pink; 
+
+  list-style: none;
+}
+
+li {
+  width: 100px;
+  height: 100px;
+
+  position: relative;
+
+  background-color: violet;
+  color: white;
+  text-align: center;
+  line-height: 100px;
+
+}
+
+li:nth-child(even) {
+  background-color: orangered;
+  color: white;
+  position: relative;
+  top: -50px;
+  left: 50px;
+}
+
+li:hover {
+z-index: 1;
+
+background-color: violet;
+}
+
+header {
+  width: 100%;
+  padding: 20px 0;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+
+  text-align: center;
+  background-color: yellow;
+}
+
+article {
+  /* creates space for the fixed header */
+  margin-top: 80px;
+}
+
+.sticky {
+  width: 100%;
+  position: sticky;
+  top: 50px;
+
+  background-color: pink;
+}
