@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #eeeeee;
+}
+
+article {
+  /* Center the element inside its container */
+  margin: 20px auto;
+  /* Gives it the ability to shrink below 600px; */
+  max-width: 600px;
+/* make sure to include the floated elements in the container height */
+  overflow: hidden;
+  border: 1px solid red;
+}
+
+.fake-image {
+  width: 150px;
+  height: 200px;
+
+  /* put space around the image */
+  margin-right: 1.15em;
+  margin-bottom: 1.15em;
+
+  border: 10px solid yellow;
+
+  /* float */
+  float: left;
+}
+
+.fake-link {
+  /* float: left; */
+
+  clear: both;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.article-right .fake-image {
+  float: right;
+
+  margin-right: 0;
+  margin-left: 1.15em;
+  margin-bottom: 1.15em;
+}
+
+.article-right .fake-link {
+  float: right;
+  /* No need to put clear:both because earlier, in the .fake-link rule, the clear was set to both. */
+  /* clear: right; */
+
+  margin-right: 0;
+}
