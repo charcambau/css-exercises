@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(238,238,238);
+
+    font-size: .85em;
+}
+
+.container {
+    margin: 50px auto;
+    padding: 40px;
+
+    overflow: hidden;
+
+    background-color: rgb(221,221,221);
+}
+
+.fakeone, .faketwo {
+    background-color: yellow;
+}
+
+.fakeone {
+    width: 100px;
+    height: 150px;
+
+    float: left;
+
+    margin-right: 1em;
+}
+
+.faketwo {
+    width: 100px;
+    height: 150px;
+
+    float: right;
+
+    margin-left: 1em;
+}
