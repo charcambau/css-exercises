@@ -1,0 +1,144 @@
+body {
+    font-family: sans-serif;
+}
+
+.double {
+    position: relative;
+
+    width: 35cm;
+    height: 21cm;
+
+    margin: 10px auto;
+    border: 1px solid black;
+}
+
+.left {
+    float: left;
+
+    width: 17cm;
+    height: 21cm;
+
+    margin: 5px;;
+}
+
+.right {
+    float: right;
+
+    width: 17cm;
+    height: 21cm;
+
+    margin: 0;
+}
+
+img {
+    float: right;
+    width: 80%;
+}
+
+.event {
+    position: absolute;
+    top: 580px;
+    left: -170px;
+
+    transform: rotate(-90deg);
+    font-size: .75em;
+}
+
+.one, .two {
+    position: absolute;
+}
+
+.one {
+    top: 550px;
+    left: 130px;
+    width: 15%;
+}
+
+.two {
+    top: 600px;
+    left: 430px;
+    width: 15%;
+}
+
+.legend {
+    position: absolute;
+    left: -100px;
+    top: 250px;
+
+    transform: rotate(-90deg);
+    font-size: .65em;
+}
+
+.three, .four, .five, .big {
+    position: relative;
+}
+
+.one, .two, .three, .four, .five {
+    font-size: .85em;
+}
+
+.big {
+    left: 50px;
+    margin: 0;
+    margin-top: 20px;
+
+    color: rgb(255,77,114);
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.three {
+    left: 50px;
+    width: 25%;
+    margin: 0;
+}
+
+.four {
+    left: 200px;
+    width: 25%;
+}
+
+.five {
+    left: 400px;
+    width: 25%;
+}
+
+.event, .event2, .legend {
+    font-family: serif;
+}
+
+.event2 {
+    position: relative;
+    top: 90px;
+    left: 50px;
+
+    font-size: .75em;
+}
+
+.button {
+    position: absolute;
+    left: 1270px;
+    top: 785px;
+
+    padding: 5px;
+    border-radius: 15%;
+    background-color: lightgray;
+}
+
+.button2 {
+    position: absolute;
+    left: 0px;
+    top: 785px;
+
+    padding: 5px;
+    border-radius: 15%;
+    background-color: lightgray;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: .85em;
+}

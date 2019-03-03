@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+    /*font-family: Favorit Pro Trial Web;
+    src: local(Favorit Pro Trial Web);*/
+
+div {
+    position: relative;
+    height: 21cm;
+    width: 17cm;
+
+    margin: 10px auto;
+
+    background-color: rgb(255,77,114);
+}
+
+img {
+    float: left;
+
+    width: 14cm;
+    height: 14cm;
+}
+
+.subtitle {
+
+    margin-left: 90px;
+}
+
+h1 {
+    font-size: 69px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 40px;
+
+    font-family: sans-serif;
+    color: white;
+}
+
+.side1, .side2 {
+    transform: rotate(90deg);
+
+    font-family: sans-serif;
+    color: white;
+    text-decoration: underline;
+}
+
+.side1{
+    position: absolute;
+
+    left: 520px;
+    top: 220px;
+}
+
+.side2 {
+    position: absolute;
+
+    left: 520px;
+    top: 675px;
+}
+
+.bottom1, .bottom2, .bottom3 {
+    float: left;
+    margin: 10px 20px;
+
+    font-size: .80em;
+}
+
+.button {
+    float: right;
+
+    padding: 5px;
+    border-radius: 15%;
+    background-color: lightgray;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: .85em;
+}

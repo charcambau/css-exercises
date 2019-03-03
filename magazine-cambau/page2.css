@@ -1,0 +1,128 @@
+.double {
+    position: relative;
+
+    width: 34cm;
+    height: 21cm;
+
+    margin: 10px auto;
+    border: 1px solid black;
+}
+
+.left {
+    float: left;
+
+    width: 17cm;
+    height: 21cm;
+
+    margin: 0;
+}
+
+.right {
+    float: right;
+
+    width: 17cm;
+    height: 21cm;
+
+    margin: 0;
+}
+
+.event {
+    position: absolute;
+    top: 580px;
+    left: -170px;
+
+    transform: rotate(-90deg);
+    font-size: .75em;
+}
+
+h1 {
+    font-size: 96px;
+    margin-left: 40px;
+    margin-top: 90px;
+
+    width: 17cm;
+
+    font-family: sans-serif;
+    line-height: .85em;
+    color: rgb(255,77,114);
+}
+
+.name {
+    float: right;
+
+    margin-top: 370px;
+    margin-right: 60px;
+}
+
+.one, .two, .three, .big {
+    position: relative;
+}
+
+.one {
+    left: 50px;
+    width: 25%;
+
+    margin-top: 50px;
+}
+
+.two {
+    left: 220px;
+    top: 30px;
+    margin: 0;
+
+    width: 25%;
+}
+
+.three {
+    left: 450px;
+    top: 20px;
+    margin: 0;
+
+    width: 25%;
+}
+
+.big {
+    left: 450px;
+    top: 20px;
+    margin: 0;
+
+    color: rgb(255,77,114);
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.event2 {
+    position: relative;
+    top: 50px;
+    left: 50px;
+
+    font-size: .75em;
+}
+
+.button {
+    position: absolute;
+    left: 1250px;
+    top: 800px;
+
+    padding: 5px;
+    border-radius: 15%;
+    background-color: lightgray;
+}
+
+.button2 {
+    position: absolute;
+    left: 5px;
+    top: 800px;
+
+    padding: 5px;
+    border-radius: 15%;
+    background-color: lightgray;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: .85em;
+}
