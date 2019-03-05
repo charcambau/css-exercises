@@ -1,48 +1,44 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: sans-serif;
+  font-family: sans-serif;
 }
 
 .parent {
-    position: relative;
+  position: relative;
+  margin: 100px auto;
+  padding: 20px;
 
-    width: 400px;
-
-    margin: 100px auto;
-    padding: 20px;
-
-    background-color: black;
+  width: 400px;
+  background-color: black;
 }
 
 p {
-    color:white;
-    padding-right: 10px;
-    padding-left: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+
+  color:white;
 }
 
 .fake-img {
-    float: left;
-    width: 100px;
-    height: 100px;
+  float: left;
+  margin-top: 10px;
+  margin-right: 1em;
 
-    margin-top: 10px;
-    margin-right: 1em;
-
-    background-color: yellow;
+  width: 100px;
+  height: 100px;
+  background-color: yellow;
 }
 
 .pastille {
-    position: absolute;
-    top: -30px;
-    right: -30px;
+  position: absolute;
+  top: -30px;
+  right: -30px;
 
-    width: 80px;
-    height: 80px;
-
-    border-radius: 50%;
-
-    background-color: red;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: red;
 }

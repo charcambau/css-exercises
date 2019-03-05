@@ -1,146 +1,145 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
+  margin: 0;
 }
 
 p {
-    position: absolute;
-    padding-top: 2%;
-    padding-left: 10%;
+  position: absolute;
+  padding-top: 2%;
+  padding-left: 10%;
 
-    color: red;
-    font-family: sans-serif;
-    font-size: 2.5em;
+  color: red;
+  font-family: sans-serif;
+  font-size: 2.5em;
 }
 
 .wrapper {
-    border: 4px solid black;
-    margin: 20px auto;
+  margin: 20px auto;
+  border: 4px solid black;
 
-    width: 708px;
-    height: 708px;
-
+  width: 708px;
+  height: 708px;
 }
 
 .left {
-    float: left;
+  float: left;
 
-    width: 300px;
-    height: 700px;
+  width: 300px;
+  height: 700px;
 }
 
 .right {
-    float: right;
+  float: right;
 
-    width: 400px;
+  width: 400px;
 }
 
 .one {
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  height: 300px;
 
-    background-color: rgb(248,235,217)
+  background-color: rgb(248,235,217)
 }
 
 .one p {
-    margin: 0;
+  margin: 0;
 }
 
 .three {
-    width: 300px;
-    height: 400px;
+  width: 300px;
+  height: 400px;
 
-    background-color: rgb(162,252,215)
+  background-color: rgb(162,252,215)
 }
 
 .three p {
-    margin: 0;
+  margin: 0;
 }
 
 .two {
-    width: 400px;
-    height: 400px;
+  width: 400px;
+  height: 400px;
 
-    background-color: rgb(120,251,253);
+  background-color: rgb(120,251,253);
 }
 
 .two p {
-    margin: 0;
+  margin: 0;
 }
 
 .four {
-    width: 400px;
-    height: 200px;
+  width: 400px;
+  height: 200px;
 
-    background-color: rgb(243,255,255)
+  background-color: rgb(243,255,255)
 }
 
 .four p {
-    margin: 0;
+  margin: 0;
 }
 
 .five {
-    width: 400px;
-    height: 100px;
+  width: 400px;
+  height: 100px;
 
-    background-color: rgb(245,246,223);
+  background-color: rgb(245,246,223);
 }
 
 .five p {
-    margin: 0;
+  margin: 0;
 }
 
 @media (max-width: 710px) {
-    .wrapper {
-        border: 2px solid black;
-        width: 505px;
-        height: 505px;
-    }
+  .wrapper {
+    width: 505px;
+    height: 505px;
+    border: 2px solid black;
+  }
 
-    .one, .three {
-        width: 200px;
+  .one, .three {
+    width: 200px;
 
-    }
+  }
 
-    .one {
-        height: 200px;
-    }
+  .one {
+    height: 200px;
+  }
 
-    .three {
-        height: 300px;
-    }
+  .three {
+    height: 300px;
+  }
 
-    .two, .four, .five {
-        float: right;
-        width: 300px;
-    }
+  .two, .four, .five {
+    float: right;
+    width: 300px;
+  }
 
-    .two {
-        height: 300px;
-    }
+  .two {
+    height: 300px;
+  }
 
-    .four {
-        height: 150px;
-    }
+  .four {
+    height: 150px;
+  }
 
-    .five {
-        height: 50px;
-    }
+  .five {
+    height: 50px;
+  }
 
-    .right {
-        width: 300px;
-    }
+  .right {
+    width: 300px;
+  }
 
-    .left {
-        width: 200px;
-    }
+  .left {
+    width: 200px;
+  }
 
-    p {
-        font-size: 1.5em;
-    }
+  p {
+    font-size: 1.5em;
+  }
 
     }
 

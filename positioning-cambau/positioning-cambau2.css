@@ -1,41 +1,38 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: rgb(238,238,238);
-
-    font-size: .85em;
+  background-color: rgb(238,238,238);
+  font-size: .85em;
 }
 
 .container {
-    width: 600px;
-    margin: 50px auto;
-    padding: 40px;
+  margin: 50px auto;
+  padding: 40px;
 
-    overflow: hidden;
-
-    background-color: rgb(221,221,221);
+  overflow: hidden;
+  
+  width: 600px;
+  background-color: rgb(221,221,221);
 }
 
 .fakeone, .faketwo {
-    background-color: yellow;
+  background-color: yellow;
 }
 
 .fakeone {
-    width: 100px;
-    height: 150px;
+  float: left;
+  margin-right: 1em;
 
-    float: left;
-
-    margin-right: 1em;
+  width: 100px;
+  height: 150px;
 }
 
 .faketwo {
-    width: 100px;
-    height: 150px;
-
-    float: right;
-
-    margin-left: 1em;
+  float: right;
+  margin-left: 1em;
+  
+  width: 100px;
+  height: 150px;
 }
