@@ -1,135 +1,132 @@
 *{
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .double {
-    position: relative;
+  position: relative;
+  margin: 10px auto;
+  border: 1px solid black;
 
-    width: 35cm;
-    height: 21cm;
-
-    margin: 10px auto;
-    border: 1px solid black;
+  width: 35cm;
+  height: 21cm;
 }
 
 .left {
-    float: left;
+  float: left;
+  margin: 5px;
 
-    width: 17cm;
-    height: 21cm;
-
-    margin: 5px;;
+  width: 17cm;
+  height: 21cm;
 }
 
 .right {
-    float: right;
+  float: right;
+  margin: 0;
 
-    width: 17cm;
-    height: 21cm;
-
-    margin: 0;
+  width: 17cm;
+  height: 21cm;
 }
 
 .img {
-    position: absolute;
-    top: 380px;
-    margin: 10px;
+  position: absolute;
+  top: 380px;
+  margin: 10px;
 
-    width: 430px;
+  width: 430px;
 }
 
 .img2 {
-    float: right;
-    margin: 20px;
+  float: right;
+  margin: 20px;
 
-    width: 40%;
+  width: 40%;
 }
 
 .legend {
-    position: absolute;
-    left: 350px;
-    top: 620px;
+  position: absolute;
+  left: 350px;
+  top: 620px;
 
-    transform: rotate(90deg);
-    font-size: .65em;
+  transform: rotate(90deg);
+  font-size: .65em;
 }
 
 .one, .two, .three, .four, .five {
-    position: absolute;
+  position: absolute;
 
-    width: 15%;
-    font-family: sans-serif;
-    font-size: .85em;
+  width: 15%;
+  font-family: sans-serif;
+  font-size: .85em;
 }
 
 .one {
-    top: 150px; 
-    left: 20px;
+  top: 150px; 
+  left: 20px;
 
-    width: 12%;   
+  width: 12%;   
 }
 
 .two {
-    top: 20px;
-    left: 470px;
+  top: 20px;
+  left: 470px;
 
-    width: 10%;
+  width: 10%;
 }
 
 .three {
-    top: 160px;
+  top: 160px;
 
-    width: 10%;
+  width: 10%;
 }
 
 .four {
-    top: 425px;
-    left: 900px;
+  top: 425px;
+  left: 900px;
 
-    width: 12%;
+  width: 12%;
 }
 
 .legend2 {
-    position: absolute;
-    top: 350px;
-    right: -70px;
+  position: absolute;
+  top: 350px;
+  right: -70px;
 
-    font-size: .65em;
-    transform: rotate(90deg);
+  font-size: .65em;
+  transform: rotate(90deg);
 }
 
 .event2 {
-    position: relative;
-    top: 750px;
-    left: 20px;
-    width: 800px;
-
-    font-size: .75em;
+  position: relative;
+  top: 750px;
+  left: 20px;
+  
+  width: 800px;
+  font-size: .75em;
 }
 
 .button {
-    position: absolute;
-    left: 1270px;
-    top: 785px;
+  position: absolute;
+  left: 1270px;
+  top: 785px;
 
-    padding: 5px;
-    border-radius: 15%;
-    background-color: lightgray;
+  padding: 5px;
+  border-radius: 15%;
+  background-color: lightgray;
 }
 
 .button2 {
-    position: absolute;
-    left: 0px;
-    top: 785px;
+  position: absolute;
+  left: 0px;
+  top: 785px;
 
-    padding: 5px;
-    border-radius: 15%;
-    background-color: lightgray;
+  padding: 5px;
+  border-radius: 15%;
+  background-color: lightgray;
 }
 
 a {
-    text-decoration: none;
-    color: black;
-    font-family: sans-serif;
-    font-size: .85em;
+  text-decoration: none;
+  color: black;
+  font-family: sans-serif;
+  font-size: .85em;
 }
