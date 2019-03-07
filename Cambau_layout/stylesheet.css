@@ -5,16 +5,20 @@
 body {
   margin: 0;
 
-  background-color: #eee;
+  background-color: rgb(221, 221, 221);
   font-family: 'Times New Roman', Times, serif;
-  font-size: 24pt;
+  font-size: 24px;
+}
+
+main {
+  overflow: hidden;
 }
 
 h1 {
   margin: 10px;
 
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 24pt;
+  font-size: 24px;
 }
 
 h2 {
@@ -22,12 +26,12 @@ h2 {
 
   font-weight: 600;
   font-style: italic;
-  font-size: 46pt;
+  font-size: 46px;
 }
 
 h3 {
   font-weight: 600;
-  font-size: 36pt;
+  font-size: 36px;
 }
 
 .banner {
@@ -44,24 +48,32 @@ h3 {
 }
 
 .logotype {
-  margin: 10px auto;
+  margin: 0 auto;
+  padding: 30px;
   text-align: center;
 }
 
 .hero {
-  margin: 30px 0;
-  margin-top: 30px;
+  margin-top: O;
+
   width: 100%;
   background-color: #eee;
+  background-image: url(DieterRams.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top left;
+  overflow: hidden;
 }
 
 .black-quote {
-  /*float: right;*/
-  max-width: 460px;
+  float: right;
+  margin: 10px;
+
+  max-width: 470px;
 }
 
 .black-quote p {
-  /*float: right;*/
+  float: right;
 }
 
 .green-line, .white-line {
@@ -74,6 +86,7 @@ h3 {
 
 nav {
   float: right;
+  margin: 20px;
 }
 
 .container {
@@ -83,15 +96,133 @@ nav {
   background-color: white;
 }
 
+.main-container {
+  height: 2186px;
+}
+
+span {
+  margin: 10px;
+  padding: 10px;
+
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  color: white;
+}
+
 .one {
+  position: relative;
+  margin-top: 100px;
+  margin-bottom: 0;
   max-width: 980px;
+  height: 300px;
+}
+
+.one h3 {
+  position: absolute;
+  top: 20px;
+  left: 100px;
+
+  max-width: 300px;
+}
+
+.one p {
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  margin-top: 60px;
+
+  max-width: 460px;
+}
+
+#pastille1 {
+  position: absolute;
+  left: -80px;
+  top: -30px;
+
+  background-color: rgb(244,222,77);
 }
 
 .img1 {
   float: right;
+  max-width: 510px;
+}
+
+.two {
+  position: relative;
+  top: 300px;
+
+  height: 300px;
+}
+
+.two h3, .two p {
+  position: absolute;
+}
+
+.two h3 {
+  left: 450px;
+
+  max-width: 380px;
+}
+
+.two p {
+  left: 450px;
+  top: 120px;
+}
+
+#pastille2 {
+  position: absolute;
+  left: -80px;
+  top: -20px;
+
+  background-color: rgb(244,45,37);
+}
+
+.img2 {
+  float: left;
+}
+
+.three {
+  position: relative;
+  top: 600px;
+
+  height: 300px;
+}
+
+.three h3, .three p {
+  position: absolute;
+}
+
+.three h3 {
+  top: 20px;
+  left: 100px;
+
+  max-width: 300px;
+}
+
+.three p {
+  top: 120px;
+  left: 100px;
+
+  max-width: 460px;
+}
+
+#pastille3 {
+  position: absolute;
+  left: -80px;
+  top: -20px;
+
+  background-color: rgb(177, 31, 26);
+}
+
+.img3 {
+  float: right;
+  max-width: 510px;
 }
 
 footer {
+  position: relative;
   width: 100%;
   background-color: rgb(96, 177, 88);
   color: white;
@@ -100,9 +231,184 @@ footer {
 
 .white-quote {
   float: right;
+  margin-top: 20px;
+  margin-right: 60px;
+
   max-width: 460px;
 }
 
 .white-quote p {
   float: right;
+}
+
+.white-line {
+  top: 140px;
+}
+
+@media (max-width: 980px) {
+  .main-container {
+    height: 1400px;
+  }
+
+  .one, .two, .three {
+    margin: 5px auto;
+    top: 0;
+
+    max-width: 700px;
+    height: 400px;
+  }
+
+  .one {
+    margin-top: 40px;
+  }
+  
+  .one p {
+    max-width: 200px;
+  }
+
+  .two p {
+    top: 180px;
+  }
+
+  .three p {
+    max-width: 200px;
+  }
+
+  .img1, .img2, .img3 {
+    max-width: 350px;
+  }
+
+  body {
+    font-size: 1em;
+  }
+
+  .one p, .two p {
+    margin: 0;
+  }
+
+  .three p {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-container {
+    height: 2300px;
+  }
+
+  .black-quote {
+    max-width: 300px;
+  }
+
+  .black-quote h2 {
+    font-size: 1em;
+  }
+
+  /*.green-line {
+    top: 270px;
+    left: 220px;
+    max-width: 150px;
+  }
+
+  .white-quote {
+    margin: 10px;
+    max-width: 100%;
+  }
+
+  .white-quote h2 {
+    font-size: 1em;
+  }
+
+  .one, .two, .three {
+    margin: 20px auto;
+    top: 0;
+
+    width: 100%;
+    height: 650px;
+  }
+
+  .one p {
+    max-width: 500px;
+  }
+
+  .one h3, .one p {
+    left: 100px;
+  }
+
+  .two p {
+    top: 140px;
+
+    max-width: 500px;
+  }
+
+  .two h3, .two p {
+    left: 150px;
+  }
+
+  .three p {
+    max-width: 500px;
+  }
+
+  .three h3, .three p {
+    left: 100px;
+  }
+
+  .img1, .img2, .img3 {
+    position: absolute;
+    bottom: 0;
+    left: 100px;
+  }
+
+  .img2 {
+    left: 150px;
+  }
+}
+
+@media (max-width: 450px) {
+  .main-container {
+    height: 2000px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .black-quote {
+    max-width: 200px;
+  }
+
+  .green-line {
+    max-width: 100px;
+    top: 300px;
+    left: 260px;
+  }
+
+  span {
+    width: 48px;
+    height: 48px;
+  }
+
+  .one, .two, .three {
+    height: 610px;
+  }
+
+  .one p {
+    top: 100px;
+  }
+
+  .two p {
+    top: 100px;
+  }
+
+  .three p {
+    top: 50px;
+  }
+
+  .img1, .img2, .img3 {
+    left: 5px;
+  }
+
+  .img3 {
+    top: 200px;
+  }
 }
