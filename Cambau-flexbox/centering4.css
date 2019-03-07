@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-content: stretch;
+  margin: 100px auto;
+
+  border: 1px dashed black;
+  width: 800px;
+  height: 800px;
+}
+
+article {
+  padding: 60px 50px;
+  border: 4px solid pink;
+}

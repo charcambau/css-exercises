@@ -1,0 +1,45 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h2 {
+  font-size: 1.2em;
+}
+
+.container {
+  display: flex;
+  border: 1px dashed black;
+  max-width: 800px;
+  height: 800px;
+}
+
+nav, aside, article {
+  padding: 20px;
+}
+
+nav, aside {
+  background-color: #ccc;
+} 
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+
+.first {
+  order: -1;
+}
+
+aside {
+flex-basis: 80%;
+}
+
+nav {
+  flex-basis: 80%;
+}
+
+

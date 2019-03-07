@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  margin: 100px auto;
+
+  border: 1px dashed black;
+  width: 900px;
+  height: 900px;
+}
+
+article {
+  padding: 60px 50px;
+  border: 4px solid pink;
+  max-width: 300px;
+}
+
+.top {
+  align-self: flex-start;
+}
+
+.middle {
+  align-self: center;
+}
+
+.bottom {
+  align-self: flex-end;
+}
