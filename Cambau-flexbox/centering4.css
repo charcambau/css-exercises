@@ -21,3 +21,11 @@ article {
   padding: 60px 50px;
   border: 4px solid pink;
 }
+
+.bottom {
+  order: -1;
+}
+
+.top {
+  order: 1;
+}
