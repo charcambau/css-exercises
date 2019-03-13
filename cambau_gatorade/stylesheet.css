@@ -132,6 +132,10 @@ footer img {
   margin: 0 auto;
 }
 
+.logotwo {
+  display: none;
+}
+
 footer p {
   align-self: center;
   color: white;
@@ -198,4 +202,18 @@ footer p {
   footer p {
     text-align: center;
   }
+
+  .logo {
+    display: none;
+  }
+  
+  .logotwo {
+    padding: 10px;
+    display: block;
+    align-self: center;
+    margin: 0 auto;
+
+    max-width: 60%;
+  }
+
 }
