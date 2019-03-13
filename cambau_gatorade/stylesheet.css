@@ -43,13 +43,9 @@ nav a:hover {
   border-bottom: 4px solid #ef7226;
 }
 
-.hero {
-  background-color: #282828;
-}
-
 .cta {
   padding: 10px;
-  border-radius: 10%;
+  border-radius: 10px;;
   text-decoration: none;
   color: white;
   background-color: #ef7226;
@@ -71,6 +67,9 @@ p {
 .hero {
   display: flex;
   align-items: center;
+
+  width: 100%;
+  background-color: #282828;
 }
 
 
@@ -80,7 +79,12 @@ p {
   justify-content: space-around;
 
   color: white;
-  margin: 0 20px;
+  margin: 10px;
+  margin-left: 10%;
+}
+
+.hero-text p {
+  max-width: 50%;
 }
 
 .hero .cta {
@@ -92,6 +96,7 @@ p {
 
 .hero img {
   max-width: 50%;
+  margin-right: 5%;
 }
 
 .container {
@@ -131,4 +136,66 @@ footer p {
   align-self: center;
   color: white;
   margin-bottom: 100px;
+}
+
+@media (max-width: 620px) {
+  article {
+    margin: 5px;
+  }
+
+  article p {
+    max-width: 80%;
+  }
+
+  .hero-text p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-text {
+    max-width: 80%;
+    margin-bottom: 20px;
+  }
+
+  .hero img {
+    margin-top: 20px;
+    order: -1;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .container img {
+    max-width: 40%;
+  }
+
+  article {
+    margin-top: 60px;
+    align-items: center;
+  }
+
+  article h3 {
+    align-self: flex-start;
+    margin-left: 10%;
+  }
+
+  article .cta {
+    align-self: center;
+  }
+
+  footer p {
+    text-align: center;
+  }
 }
