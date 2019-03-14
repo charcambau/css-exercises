@@ -35,11 +35,15 @@ article {
 }
 
 aside {
-flex-basis: 80%;
+flex-basis: 20%;
 }
 
 nav {
-  flex-basis: 80%;
+  flex-basis: 20%;
+}
+
+main {
+  flex-basis: 60%;
 }
 
 
