@@ -1,0 +1,120 @@
+* {
+  box-sizing: border-box;
+}
+/* All block-level elements will be resized including the border */
+
+body {
+  /* box-model (margin, padding, width and height) */
+  margin: 0;
+  /* resets the margin to 0 for all elements in the body and the body itself */
+  min-height: 100vh;
+  /* gives a height to the body so its the full size of the viewport */
+
+
+  /* layout (display, flex, position) */
+  display: flex;
+  /* makes the body a flex-container and anthing in it flex-items */
+  justify-content: center;
+  /* main axis */
+  align-items: center;
+  /* cross axis */
+
+  /* styling */
+  color: blue;
+  /* changes the color of all elements */
+  background-color: #ddd;
+  /* gives a grey color to the body */
+  font-size: 2em;
+  /* sets the font size to 32 for the whole body */
+}
+
+.box {
+  /* box-model */
+  padding: 2em 1em;
+
+  /* layout */
+
+  /* styling */
+  background-color: #fff;
+  /* The box has a lighter color than the body : makes it stand out */
+  box-shadow: 0 0 20px #aaa;
+   /* puts a shadow on the box. attributes: x offset, y offset, blur radius and color (with transparency)*/
+
+  transition: padding  1s ease-in,
+            border 1s ease-out 1s;
+}
+
+ .box:hover {
+  /* Top Right Bottom Left */
+  /* Top LeftRight Bottom */
+  /* TopBottom LeftRight */
+  /* TopBottomLeftRight */
+  padding: 2em 2em 3em;
+  border-bottom: 1em solid red;
+
+  transition: padding  1s ease-in,
+              border 1s ease-out 1s;
+} 
+
+
+@media (max-width:600px) {
+  .box {
+    width: 100%;
+    height: 100vh;
+
+    font-size: .5em;
+  }
+  /* fits the box into the screen and makes the font size smaller when the viewport width is 600px or less*/
+}
+
+.box-title {
+  margin: 0;
+  /* resets the heading's margin to 0. */
+
+  font-size: 2em;
+  /* sets the heading's font size to 64px */
+}
+
+.box-description {
+  margin: .25em 0;
+}
+
+.box-link {
+  display: block;
+  margin-top: 2em;
+
+  /* styling */
+  padding: 1em;
+  
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: blue;
+  color: white;
+  border-radius: .25em;
+  font-size: .5em;
+  /* transition shorthand */
+  transition: background-color 3s ease-in-out;
+}
+
+
+.box-link:hover {
+  background-color: cyan;
+  color: blue;
+
+  transition: background-color .5s ease-in-out .1s;
+}
+
+  /* what should be animated */
+  /* transition-property: background-color; */
+  /* for how long */
+  /* transition-duration: 1s; */
+  /* bezier curve that defines the velocity of the change */
+  /* transition-timing-function: ease-in-out; */
+  /*transition-timing-function: steps(5, start);
+    jump-start: Denotes a left-continuous function, so that the first jump happens when the transition begins;
+    jump-end: Denotes a right-continuous function, so that the last jump happens when the animation ends
+  
+  transition-delay: .5s;
+
+ */
