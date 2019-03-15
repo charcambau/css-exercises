@@ -1,0 +1,35 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+
+  font-family: sans-serif;
+  font-weight: 800;
+}
+
+.square {
+  width: 8em;
+  height: 8em;
+
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: #ddd;
+}
+
+.square:hover {
+  background-color: black;
+  transition: background-color 1s;
+}
+
+p {
+  font-size: 6em;
+  color: white;
+}

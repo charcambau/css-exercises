@@ -41,6 +41,11 @@ body {
               color .8s ease-in;
 }
 
+/*@keyframes color {
+  from {top:35px; }
+  to {top:200px; }
+}*/
+
 .bookmark {
   width: 40px;
 
