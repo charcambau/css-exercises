@@ -1,0 +1,72 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-family: sans-serif;
+  font-weight: 800;
+}
+
+.square {
+  position: relative;
+  width: 8em;
+  height: 8em;
+
+  overflow: hidden;
+
+  background-color: #ddd;
+}
+
+p {
+  position: absolute;
+  top: -85px;
+  right: 30px;
+
+  font-size: 6em;
+  color: white;
+
+  z-index: 1;
+}
+
+.black {
+  position: absolute;
+  top: 150px;
+  left: 150px;
+
+  width: 8em;
+  height: 8em;
+
+  background-color: black;
+
+  transition: all .15s ease-in-out .5s;
+}
+
+.green {
+  position: absolute;
+  left: -150px;
+
+  width: 8em;
+  height: 8em;
+  background-color: #42d47b;
+  
+  transition: all .15s ease-in-out;
+}
+
+.square:hover .black {
+  top: 0;
+  left: 0;
+
+  transition: all .15s ease-in-out;
+}
+
+.square:hover .green {
+  left: 0;
+
+  transition: all .15s ease-in-out .5s;
+}
