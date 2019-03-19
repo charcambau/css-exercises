@@ -41,6 +41,11 @@ body {
               color .8s ease-in;
 }
 
+.circle:hover p {
+  top: 0;
+  transition: top .5s;
+}
+
 /*@keyframes color {
   from {top:35px; }
   to {top:200px; }
@@ -56,9 +61,12 @@ body {
 }
 
 .circle p {
+  top: 50px;
  position: absolute;
  margin-left: 80px;
  margin-top: 35px;
 
  font-size: 1.5em;
+
+ transition: top .5s .2s;
 }
