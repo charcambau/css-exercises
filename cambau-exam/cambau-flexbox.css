@@ -1,0 +1,75 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-content: center;
+}
+
+.container {
+  margin: 20px auto;
+
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-end;
+}
+
+.first-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.first-box-one {
+  order: 3;
+}
+
+.second-box-one {
+  order: 4;
+}
+
+@media(max-width:1024px) {
+  body {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .container {
+    flex-wrap: wrap;
+  }
+
+  .first-row {
+    flex-wrap: wrap;
+  }
+
+  .second-row {
+    flex-wrap: wrap;
+  }
+
+  .box {
+    margin: 0;
+  }
+}
+
+@media(max-width:420px) {
+
+  .first-row .second-row {
+
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .box {
+    order: 0;
+  }
+}
+
+/* The solution might have been to delete the .first-row and .second-row divs in the HTML, 
+to give the .container a fixed width and flex-wrap :wrap; and that would have made it easier for media queries.
+Lacked time to try this. */
