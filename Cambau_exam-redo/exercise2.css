@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+}
+
+.container {
+  max-width: 960px;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.boxFive {
+  order: 1; 
+}
+
+.boxSix {
+  order: 2;
+}
+
+@media (max-width:420px) and (min-width:1024px) {
+
+  .container {
+    max-width: 715px;
+    justify-content: center;
+  }
+}
+
+@media (max-width:420px) {
+  .boxOne {
+    order: -8;
+  }
+
+  .boxFive {
+    order: -7;
+  }
+
+  .boxTwo {
+    order: -6;
+  }
+
+  .boxSix {
+    order: -5;
+  }
+
+  .boxThree {
+    order: -4;
+  }
+
+  .boxSeven {
+    order: -3;
+  }
+}
