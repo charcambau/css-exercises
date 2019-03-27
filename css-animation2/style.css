@@ -33,23 +33,24 @@ body {
   25% {
     top: 0;
     left: calc(100% - 50px);
-    background-color: #ff00aa;
+    background-color: #ff7b00;
   }
 
   50% {
     left: calc(100% - 50px);
     top: calc(100% - 50px);
-    background-color: #ff00aa;
+    background-color: #ffe600;
   }
 
   75% {
     left: 0;
     top: calc(100% - 50px);
+    background-color: #00ff37;
   }
 
   /* ending point */
   100% {
     top: 0;
-    background-color: #000000;
+    background-color: #00f7ff;
   }
 }
