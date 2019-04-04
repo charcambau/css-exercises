@@ -30,3 +30,9 @@ var messageToTheWorld = 'Hello World';
 var myName = 'Charlotte';
 
 console.log(messageToTheWorld + ' from ' + myName);
+
+
+
+//try to substitute the content of the h1 element
+var titleElement = document.getElementById('title');
+titleElement.innerHTML = messageToTheWorld + ' from ' + myName;
