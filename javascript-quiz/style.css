@@ -1,0 +1,25 @@
+*{
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100Vh;
+
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  margin-top: 50px;
+}
+
+div {
+  width: 100%;
+}
+
+.goldfish {
+  margin-top: 50px;
+}
