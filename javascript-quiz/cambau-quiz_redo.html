@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="quiz with questions from buzzfeed to practice javascript">
+  <link rel="stylesheet" href="style.css">
+  <title>Cambau - quiz</title>
+</head>
+
+<body>
+  
+  <section class="quiz">
+    <article class='question' id='question-1' data-answer='true'>
+      <h3>question 1</h3>
+      <p>
+        <input type="radio" name="question-1" value="true" id='q1True'>
+        <label for="q1True">Yes</label>
+        <input type="radio" name="question-1" value='false' id='q1False'>
+        <label for="q1False">No</label>
+      </p>
+    </article>
+
+    <button id='submit' onclick='submitQuiz()'>submit your result</button>
+  </section>
+
+  <script>
+    console.log('hello quiz');
+    var answers = [true, true, false];
+
+    function submitQuiz() {
+
+      console.log(document.getElementbyId('question-1').dataset.answer);
+      console.log(document.getElementbyId('q1True').value);
+      console.log(document.getElementbyId('q1False').checked);
+
+      // var correctAnswers
+      // var totalAnswers
+      // if ..... blablabla
+
+    }
+  </script>
+  <!-- <script src="script.js"></script> -->
+</body>
+</html>
