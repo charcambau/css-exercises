@@ -11,51 +11,68 @@
 <body>
   <h1>The weird facts quiz</h1>
 
-  <div class="goldfish">
-    <p>Goldfish only have a memory of three seconds.</p>
+  <article id="quiz">
+    <div class="goldfish">
+      <p>Goldfish only have a memory of three seconds.</p>
 
-    <select id="selectAnswerGoldfish">
-      <option value="yes" id="yesGoldfish">Yes</option>
-      <option value="no" id="noGoldfish">No</option>
-    </select>
-  </div>
+      <radio id="selectAnswerGoldfish">
+        <input type="radio"  name="Goldfish" value="yes" id="wrongGoldfish">Yes
+        <p id="wrong"></p>
+        <input type="radio"  name="Goldfish" value="no" id="rightGoldfish">No
+        <p id="right"></p>
+      </radio>
+    </div>
 
-  <div class="adults">
-    <p>Adults have less bones than babies do.</p>
+    <div class="adults">
+      <p>Adults have less bones than babies do.</p>
 
-    <select id="selectAnswerAdults">
-      <option value="yes">Yes</option>
-      <option value="no">No</option>
-    </select>
-  </div>
+      <radio id="selectAnswerAdults">
+        <input type="radio" name="Adults" value="yes" id="rightAdults">Yes
+        <p id="rightTwo"></p>
+        <input type="radio" name="Adults" value="Adults" id="wrongAdults">No
+        <p id="wrongTwo"></p>
+      </radio>
+    </div>
 
-  <div class="SanMarino">
-    <p>The oldest state in the world is San Marino</p>
+    <div class="SanMarino">
+      <p>The oldest state in the world is San Marino</p>
 
-    <select id="selectAnswerSanMarino">
-        <option value="yes">Yes</option>
-        <option value="no">No</option>
-    </select>
-  </div>
+      <radio id="selectAnswerSanMarino">
+          <input type="radio" name="SanMarino" value="yes" id="rightSanMarino">Yes
+          <p id="rightThree"></p>
+          <input type="radio" name="SanMarino" value="no" id="wrongSanMarino">No
+          <p id="wrongThree"></p>
+      </radio>
+    </div>
 
-  <div class="Lightning">
-    <p>Lightning never strikes in the same place twice.</p>
+    <div class="Lightning">
+      <p>Lightning never strikes in the same place twice.</p>
 
-    <select id="selectAnswerLightning">
-      <option value="yes">Yes</option>
-      <option value="no">No</option>
-    </select>
-  </div>
+      <radio id="selectAnswerLightning">
+        <input type="radio" name="Lightning" value="yes" id="wrongLightning">Yes
+        <p id="wrongFour"></p>
+        <input type="radio" name="Lightning" value="no" id="rightLightning">No
+        <p id="rightFour"></p>
+      </radio>
+    </div>
 
-  <div class="breathe">
-    <p>Humans can't breathe and swallow at the same time</p>
+    <div class="breathe">
+      <p>Humans can't breathe and swallow at the same time</p>
 
-    <select id="selectAnswerBreathe">
-      <option value="yes">Yes</option>
-      <option value="no">No</option>
-    </select>
-  </div>
+      <radio id="selectAnswerBreathe">
+        <input type="radio" name="Breathe" value="yes" id="rightBreathe">Yes
+        <p id="rightFive"></p>
+        <input type="radio" name="Breathe" value="no" id="wrongBreathe">No
+        <p id="wrongFive"></p>
+      </radio>
+    </div>
+  </article>
 
-  <script src="script.js"></script>
+  <button id='submit' onclick='submitQuiz()'>submit your result</button>
+  <button id="reset">Reset</button>
+
+  <section id="results"></section>
+
+  <script src="script2.js"></script>
 </body>
 </html>

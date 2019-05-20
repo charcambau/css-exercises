@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: rgb(222, 224, 213);
+}
+
+p {
+  font-weight: bold;
+  font-size: .7em;
+}
+
+.poster {
+  margin: 10px auto;
+  max-width: 500px;
+  height: 700px;
+  display: grid;
+  grid-template-columns: 15% 70% 15%;
+  grid-template-rows: 1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr 1fr 1fr;
+
+  /* border: 2px solid red; */
+}
+
+.blue {
+  background-color: rgb(67, 158, 197);
+}
+
+.red {
+  background-color: rgb(193, 62, 47);
+}
+
+.brown {
+  background-color: rgb(83, 54, 52);
+}
+
+.beige {
+  background-color: rgb(222, 224, 213);
+}
+
+/* .grid-item {
+  border: 2px solid blue;
+} */
+
+.blank-4 {
+  grid-column-start: 1;
+}
+
+.blank-bottom {
+  grid-column: 1/4;
+}
+
+.days, .title, .with, .where {
+  margin: 0;
+  padding-left: 10px;
+}
+
+.days, .with, .where {
+  padding-top: 10px;
+}
+
+.title {
+  font-size: 4em;
+}
