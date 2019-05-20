@@ -177,6 +177,8 @@ function reset() {
 
 
 
+
+
 // //-------SUBMIT ANSWERS---------------------
 // var submitAnswers = document.getElementById('submit');
 // submitAnswers.addEventListener('click', ShowAnswers);
@@ -187,17 +189,8 @@ function reset() {
 
 
 
-
-
 // var answers = [false, true, true, false, true];
 // var last = answers[answers.length-1];
-
-
-
-
-
-
-
 
 
 
