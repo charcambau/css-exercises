@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  height: 100vh;
+
+  background: linear-gradient(rgb(203, 0, 0) 15%, rgb(255, 132, 0) 15% 30%, yellow 30% 45%, rgb(88, 238, 88) 45% 60%, rgb(78, 153, 252) 60% 75%, rgb(159, 25, 255) 75% 100%);
+}
+
+.layout-container {
+  margin: 5px auto;
+  max-width: 700px;
+
+  display: grid;
+  grid-template-columns: 20% 80%;
+
+  border: 5px solid black;
+}
+
+.header {
+  grid-column: 1/3;
+
+  text-align: center;
+  background-color: rgb(255, 0, 119);
+}
+
+.nav {
+  grid-row: 2/4;
+
+  text-align: center;
+  background-color: rgb(109, 191, 109);
+}
+
+.content {
+  padding: 5px 40px;
+  background-color: rgb(243, 193, 118);
+}
+
+.content h2 {
+  text-align: center;
+}
+
+.img {
+  width: 50px;
+  height: 50px;
+  float: left;
+  border: 2px solid black;
+}
+
+.footer {
+  grid-column: 2/3;
+  grid-row: 3/4;
+
+  text-align: center;
+  background-color: rgb(134, 165, 151);
+}
+
+@media (max-width: 600px) {
+  .layout-container {
+    height: 90vh;
+    grid-template-columns: 100%;
+    grid-template-rows: .5fr .5fr 1.5fr .5fr;
+  }
+
+  .header {
+    grid-row: 1/2;
+  }
+
+  .nav {
+    grid-row: 2/3;
+  }
+
+  .content {
+    grid-row: 3/4;
+  }
+
+  .footer {
+    grid-column-start: 1;
+    grid-row: 4/5;
+  }
+}
+
+@media (max-width: 440px) {
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+/* consider writing the code the other way around ---> code the mobile layout first and then do a media query for the larger viewport : easier */
