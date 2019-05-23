@@ -18,9 +18,9 @@ body {
   background-color: rgb(214, 215, 210);
 }
 
-h1, div, h3, h5, p {
-  /* border: solid 2px magenta; */
-}
+/* h1, div, h3, h5, p {
+   border: solid 2px magenta;
+} */
 
 div {
   width: 45px;
