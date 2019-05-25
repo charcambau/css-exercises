@@ -1,11 +1,14 @@
 console.log('-- innit script');
 
 var myTitle;
+
 /* the variable is undefined because it has no value assigned to it */
 console.log(myTitle);
+
 // The variable has null because it has a wrong value assigned to it
 myTitle = document.getElementById('name');
 console.log(myTitle);
+
 // The value of the variable gets logged into the console : it fetched the id and logs its text
 myTitle = document.getElementById('appTitle').innerHTML;
 console.log(myTitle);
@@ -14,7 +17,7 @@ console.log(myTitle);
 /* Say my name app */
 
 
-// ********* DEFINE A VARIABLE ************************
+// ********* DEFINE VARIABLES FOR EACH ELEMENT IN HTML ************************
 var allTheNames = [];
 
 var nameButton = document.getElementById('nameButton');
@@ -28,9 +31,10 @@ var messageBox = document.getElementById('msgBox');
 
 
 
-// in the function that happends when you click on the button, 
-// log in the console whatever was written in the input field
+// in the function that happens when you click on the button, 
 function sayMyName() {
+
+  // log into the console whatever was written in the input field
   // console.log(allTheNames);
 
 
@@ -74,6 +78,44 @@ function updateTheMessage(messageText, messageSuccess) {
     messageBox.classList.remove('message-success');
   }
 }
+
+
+var undo = document.getElementById('undoButton');
+undo.addEventListener('click', undoLast);
+
+function undoLast () {
+  console.log('yo this works');
+  allTheNames.pop(inputText.value);
+
+  var lastNameToUndo = allTheNames[allTheNames.length];
+  deleteTheMessage('Your name ' + lastNameToUndo + ' has been deleted',true);
+}
+
+
+function deleteTheMessage(messageText, messagedelete) {
+  messageBox.innerText = messageText;
+
+  if (messagedelete == true) {
+    messageBox.classList.add('message-delete');
+    messageBox.classList.remove('message-success');
+  } else {
+    messageBox.classList.add('message-success');
+    messageBox.classList.remove('message-delete');
+  }
+}
+
+
+var listNames = document.getElementById('list');
+listNames.addEventListener('click', listTheNames);
+
+function listTheNames () {
+  document.getElementById('display').innerHTML = ' ' + allTheNames;
+}
+
+
+
+
+
 
 
 // // execute the function

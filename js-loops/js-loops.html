@@ -24,6 +24,14 @@
       content: '\02713';
     }
 
+    .message-delete:before {
+      content: '\02713';
+    }
+
+    .message-delete {
+      color: palevioletred;
+    }
+
     .message-error:before {
       content: '\02717';
     }
@@ -39,8 +47,10 @@
     <h1 id="appTitle">Save my name app</h1>
     <input type="text" id="myName" placeholder="your name...">
     <button id="nameButton">Save my name</button>
-    <button id="undo">Undo</button>
+    <button id="undoButton">Undo</button>
+    <button id="list">See saved names</button>
     <p id="msgBox" class="message">This is a message to you</p>
+    <div id="display"></div>
   </article>
 
   <script src="js-loops.js"></script>
