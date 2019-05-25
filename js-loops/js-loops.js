@@ -92,10 +92,10 @@ function undoLast () {
 }
 
 
-function deleteTheMessage(messageText, messagedelete) {
+function deleteTheMessage(messageText, messagedeleted) {
   messageBox.innerText = messageText;
 
-  if (messagedelete == true) {
+  if (messagedeleted == true) {
     messageBox.classList.add('message-delete');
     messageBox.classList.remove('message-success');
   } else {
