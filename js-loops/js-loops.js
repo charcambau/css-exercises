@@ -87,7 +87,7 @@ function undoLast () {
   console.log('yo this works');
   allTheNames.pop(inputText.value);
 
-  var lastNameToUndo = allTheNames[allTheNames.length];
+  var lastNameToUndo = allTheNames[allTheNames.length - 1];
   deleteTheMessage('Your name ' + lastNameToUndo + ' has been deleted',true);
 }
 
