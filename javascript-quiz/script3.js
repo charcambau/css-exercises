@@ -12,6 +12,7 @@ var submitAnswers = document.getElementById('submit');
 submitAnswers.addEventListener('click', showAnswers);
 
 function showAnswers () {
+  
 }
 
 // function to print the message
