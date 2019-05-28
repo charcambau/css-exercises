@@ -85,10 +85,10 @@ undo.addEventListener('click', undoLast);
 
 function undoLast () {
   console.log('yo this works');
+  // var lastNameToUndo = allTheNames[allTheNames.length - 1];
+  deleteTheMessage('Your name ' + allTheNames.pop(inputText.value) + ' has been deleted',true);
   allTheNames.pop(inputText.value);
 
-  var lastNameToUndo = allTheNames[allTheNames.length - 1];
-  deleteTheMessage('Your name ' + lastNameToUndo + ' has been deleted',true);
 }
 
 
