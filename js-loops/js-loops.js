@@ -88,7 +88,6 @@ function undoLast () {
   // var lastNameToUndo = allTheNames[allTheNames.length - 1];
   deleteTheMessage('Your name ' + allTheNames.pop(inputText.value) + ' has been deleted',true);
   allTheNames.pop(inputText.value);
-
 }
 
 
@@ -109,7 +108,7 @@ var listNames = document.getElementById('list');
 listNames.addEventListener('click', listTheNames);
 
 function listTheNames () {
-  document.getElementById('display').innerHTML = ' ' + allTheNames;
+  document.getElementById('display').innerHTML = '  ' + allTheNames;
 }
 
 
