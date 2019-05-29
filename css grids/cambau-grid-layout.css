@@ -2,10 +2,15 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 100vh;
+  background: linear-gradient(pink, rgb(201, 168, 255), rgb(169, 159, 255), rgb(182, 252, 252));
+}
+
 .layout-container {
   max-width: 300px;
   height: 500px;
-  margin: 5px auto;
+  margin: 100px auto;
 
   display: grid;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -14,7 +19,23 @@
 }
 
 .header, .nav, .content, .footer {
-  border: 2px solid pink;
+  /* border: 2px solid pink; */
+}
+
+.header {
+  background-color: pink;
+}
+
+.nav {
+  background-color: rgb(255, 240, 245);
+}
+
+.content {
+  background-color: rgb(209, 160, 255);
+}
+
+.footer {
+  background-color: rgb(196, 255, 255);
 }
 
 
