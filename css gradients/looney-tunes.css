@@ -29,6 +29,14 @@
   background-image: radial-gradient(#ffffff, #df3b30,  #680801);
 
   z-index: 0;
+
+  transform: translateY(0%);
+  transition: transform 2s ease-in-out;
+}
+
+.circle-two:hover {
+  transform: translateY(50%);
+  transition: transform 2s ease-in-out;
 }
 
 .circle-two {
@@ -77,6 +85,14 @@
   background-color: rgb(0, 0, 104);
 
   z-index: 5;
+
+  transform: scale(1);
+  transition: transform 2s ease-in-out;
+}
+
+.circle-five:hover {
+  transform: scale(2);
+  transition: transform 2s ease-in-out;
 }
 
 p {
@@ -87,6 +103,13 @@ p {
   font-weight: 600;
   font-variant: small-caps;
 
+  transform: rotate(0deg);
+  transition: transform 2s ease-in;
+}
+
+p:hover {
+  transform: rotate(360deg);
+  transition: transform 2s ease-in;
 }
 
 @media (max-width: 750px) {
