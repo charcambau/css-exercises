@@ -11,7 +11,7 @@
 </head>
 
 <body>
-  <article class="container dolphins">
+  <article class="container dolphins" id="dolphin">
     <h2>Dolphins and plastic</h2>
     <p>Almost ten per cent of whales, dolphins, and porpoises examined as part of a new Irish study were found to have plastics in their digestive tracts. The study published in Environmental Pollution found that 8.5 per cent (45 individuals) of Irish cetaceans tested had marine debris in their stomachs and intestines.</p>
     <img src="images/dolphin.png" alt="drawing of a dolphin" class="img dolphin-img">
@@ -19,13 +19,7 @@
     <a href="https://greennews.ie/microplastics-found-10-whales-dolphins-ireland/">Learn more about the research</a>
   </article>
 
-  <div class="dots">
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-
-  <article class="container palm">
+  <article class="container palm" id="palm">
     <h2>Palm oil effects</h2>
     <p>Palm oil has been and continues to be a major driver of deforestation of some of the world’s most biodiverse forests, destroying the habitat of already endangered species like the Orangutan, pygmy elephant and Sumatran rhino. This forest loss coupled with conversion of carbon rich peat soils are throwing out millions of tonnes of greenhouse gases into the atmosphere and contributing to climate change. </p>
     <img src="images/island.png" alt="drawing of an island with a palm tree" class="img island-img">
@@ -33,13 +27,13 @@
     <a href="https://www.wwf.org.uk/updates/8-things-know-about-palm-oil">What you need to know</a>
   </article>
 
-  <div class="dots">
+  <!-- <div class="dots dots-palm">
     <div class="dot dot-one"></div>
     <div class="dot dot-two"></div>
     <div class="dot dot-three"></div>
-  </div>
+  </div> -->
 
-  <article class="container earth">
+  <article class="container earth" id="earth">
     <h2>Climate crisis</h2>
     <p>A report by experts from 27 national science academies has set out the widespread damage global heating is already causing to people’s health and the increasingly serious impacts expected in future. Scorching heatwaves and floods will claim more victims as extreme weather increases but there are serious indirect effects too, from spreading mosquito-borne diseases to worsening mental health.</p>
     <img src="images/earth.png" alt="drawing of the earth" class="img earth-img">
@@ -47,10 +41,18 @@
     <a href="https://www.theguardian.com/environment/2019/jun/03/climate-crisis-seriously-damaging-human-health-report-finds ">Read the health report</a>
   </article>
 
-  <div class="dots">
-    <div></div>
-    <div></div>
-    <div></div>
+  <!-- <div class="dots dots-earth">
+    <div class="dot dot-one"></div>
+    <div class="dot dot-two"></div>
+    <div class="dot dot-three"></div>
+  </div> -->
+
+  <div class="dots dots-dolphins">
+    <div class="dot dot-one"  id="nextSlideOne"></div>
+    <div class="dot dot-two" id="nextSlideTwo"></div>
+    <div class="dot dot-three" id="nextSlideThree"></div>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
