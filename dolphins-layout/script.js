@@ -55,4 +55,10 @@ function nextSlideOne() {
   myAnimOne = TweenLite.from('#dolphinTitle', 1, {scale:1.8, delay:0, ease: Elastic.easeOut});
   myAnimOne = TweenLite.from('#dolphinText', 1, {scale:1.5, delay:0, ease: Elastic.easeOut});
   myAnimOne = TweenLite.from('#dolphin-link', .6, {y:800, delay:.6, ease: Back.easeOut});
+
 }
+
+// var called current slide: whenever you click on a slide it says current slide:one
+// Compare the clicked slide with the current slide
+// class active to the button you clicked 
+// -- if current is number one and clicked one is number two then make the second one active
