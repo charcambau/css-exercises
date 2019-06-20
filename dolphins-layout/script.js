@@ -14,7 +14,7 @@ function nextSlideTwo() {
   myAnimTwo = TweenLite.from('.island-img', .5, {x:-800, delay:0, ease: Power1.easeOut});
   myAnimTwo = TweenLite.from('#palmTitle', 1, {scale:1.8, delay:0, ease: Elastic.easeOut});
   myAnimTwo = TweenLite.from('#palmText', 1, {scale:1.5, delay:0, ease: Elastic.easeOut});
-  myAnimTwo = TweenLite.from('#palm-link', 1, {y:500, delay:.6, ease: Back.easeOut});
+  myAnimTwo = TweenLite.from('#palm-link', .6, {y:800, delay:.6, ease: Back.easeOut});
 
 }
 
@@ -34,7 +34,7 @@ function nextSlideThree() {
   myAnimThree = TweenLite.from('.earth-img', .5, {x:-800, delay:0, ease: Power1.easeOut});
   myAnimThree = TweenLite.from('#earthTitle', 1, {scale:1.8, delay:0, ease: Elastic.easeOut});
   myAnimThree = TweenLite.from('#earthText', 1, {scale:1.5, delay:0, ease: Elastic.easeOut});
-  myAnimThree = TweenLite.from('#earthLink', 1, {y:500, delay:.6, ease: Back.easeOut});
+  myAnimThree = TweenLite.from('#earthLink', .6, {y:800, delay:.6, ease: Back.easeOut});
 
 }
 
@@ -54,5 +54,5 @@ function nextSlideOne() {
   myAnimOne = TweenLite.from('.dolphin-img', .5, {x:-800, delay:0, ease: Power1.easeOut});
   myAnimOne = TweenLite.from('#dolphinTitle', 1, {scale:1.8, delay:0, ease: Elastic.easeOut});
   myAnimOne = TweenLite.from('#dolphinText', 1, {scale:1.5, delay:0, ease: Elastic.easeOut});
-  myAnimOne = TweenLite.from('#dolphin-link', 1, {y:500, delay:.6, ease: Back.easeOut});
+  myAnimOne = TweenLite.from('#dolphin-link', .6, {y:800, delay:.6, ease: Back.easeOut});
 }
