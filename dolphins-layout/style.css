@@ -4,6 +4,7 @@
 
 body {
   font-family: 'Work Sans', sans-serif;
+  overflow: hidden;
 }
 
 .container {
@@ -82,12 +83,12 @@ p {
   min-width: 20px;
   height: 20px;
 
-  background-color: #2896E0;
+  background-color: #BEFCFE;
   border-radius: 50%;
   align-self: center;
   cursor: pointer;
 }
 
-.dot-two, .dot-three {
+/* .dot-two, .dot-three {
   background-color: #BEFCFE;
-}
+} */

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="js-navigation.css">
+  <title>JS navigation</title>
+  <style>
+    body {
+      transition: background-color 1s ease;
+      font-size: 400%;
+      font-family: sans-serif;
+    }
+
+    ul { 
+      padding:0;
+      margin:0;
+      list-style: none;
+    }
+
+    a, a:link {
+      color: rgb(1, 1, 1);
+      text-decoration: none;
+      text-shadow: 15px 5px 5px rgb(232, 255, 27);
+    }
+
+    a.main-nav-link-active {
+      color: #333;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  
+  <nav class="main-nav">
+    <ul>
+      <li><a class="main-nav-link" href="#" data-color="#ff9393">Red</a></li>
+      <li><a class="main-nav-link" href="#" data-color="#c4ffc0">Green</a></li>
+      <li><a class="main-nav-link" href="#" data-color="#ad69ea">Purple</a></li>
+      <li><a class="main-nav-link" href="#" data-color="#ffcd3f">Orange</a></li>
+      <li><a class="main-nav-link" href="#" data-color="#ffc107">Mango</a></li>
+      <li><a class="main-nav-link" href="#" data-color="#97faff">Blue</a></li>
+    </ul>
+  </nav>
+
+  <script>
+  // When I click a link, I want that link to have an active state
+  // When I click another link, that one gets a color and the other one turns back to pink
+  // For each element >> add an event listener
+  // console.log(links[2]);
+
+  // store all the links
+  var links = document.getElementsByClassName('main-nav-link');
+  
+  // calculate the length of the array
+  var numberOfLinks = links.length;
+
+  // store the last clicked link
+  var lastLinkClicked;
+
+  //loop through all the links
+  // for (set a var, number of times it'll loop, add one) 
+  for (var n = 0; n < numberOfLinks; n++) {
+    console.log(links[n]);
+    // links[0] = 1
+    // links[1] = 2
+    // links[2] = 3
+    // this is why length - 1 = the last item of the array
+    links[n].addEventListener('click', colorMeBlue);
+  }
+
+  function colorMeBlue(event) {
+    // check if variable is not undefined
+    if (lastLinkClicked) {
+      lastLinkClicked.classList.remove('main-nav-link-active');
+    }
+    
+    
+    this.classList.add('main-nav-link-active');
+    // OR event.target.classList.add('main-nav-link-active'); because event is an argument passed to the function
+    
+    // store the last name clicked
+    lastLinkClicked = this;
+
+    // color the body
+    console.log(this.innerText);
+    document.body.style.backgroundColor = this.dataset.color;
+  }
+
+  // From there, need to find a way to remove the class list when another link is clicked
+
+
+
+
+  </script>
+</body>
+</html>
