@@ -1,3 +1,6 @@
+
+var dotClicked;
+
 var toNextSlideTwo = document.getElementById('nextSlideTwo');
 toNextSlideTwo.addEventListener('click', nextSlideTwo);
 
@@ -15,7 +18,6 @@ function nextSlideTwo() {
   myAnimTwo = TweenLite.from('#palmTitle', 1, {scale:1.8, delay:0, ease: Elastic.easeOut});
   myAnimTwo = TweenLite.from('#palmText', 1, {scale:1.5, delay:0, ease: Elastic.easeOut});
   myAnimTwo = TweenLite.from('#palm-link', 1, {y:500, delay:.6, ease: Back.easeOut});
-
 }
 
 var toNextSlideThree = document.getElementById('nextSlideThree');
@@ -36,6 +38,13 @@ function nextSlideThree() {
   myAnimThree = TweenLite.from('#earthText', 1, {scale:1.5, delay:0, ease: Elastic.easeOut});
   myAnimThree = TweenLite.from('#earthLink', 1, {y:500, delay:.6, ease: Back.easeOut});
 
+  // var dotThree = document.getElementsByClassName('dot-three');
+
+  // dotClicked = nextSlideThree;
+
+  // if (dotClicked) {
+  //   dotClicked.style.color = 'red';
+
 }
 
 var toNextSlideOne = document.getElementById('nextSlideOne');
@@ -55,4 +64,6 @@ function nextSlideOne() {
   myAnimOne = TweenLite.from('#dolphinTitle', 1, {scale:1.8, delay:0, ease: Elastic.easeOut});
   myAnimOne = TweenLite.from('#dolphinText', 1, {scale:1.5, delay:0, ease: Elastic.easeOut});
   myAnimOne = TweenLite.from('#dolphin-link', 1, {y:500, delay:.6, ease: Back.easeOut});
+
 }
+
