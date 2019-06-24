@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-
 var dotClicked;
 
 var toNextSlideTwo = document.getElementById('nextSlideTwo');
@@ -41,6 +39,8 @@ function changeSlide(e) {
   playTimeline(nextSlide);
 >>>>>>> 5670e6ddf03dca1f922cd62a3084156a40ecef3d
 
+function nextSlideTwo() {
+  console.log('yup');
 
 }
 
@@ -63,7 +63,6 @@ function nextSlideOne() {
   document.getElementById('dolphin').style.display = 'grid';
 
 }
-
 function nextSlideTwo() {
   document.getElementById('palm').style.display = 'grid';
   document.getElementById('dolphin').style.display = 'none';
@@ -75,11 +74,7 @@ function nextSlideTwo() {
   myAnimTwo = TweenLite.from('.island-img', .5, {x:-800, delay:0, ease: Power1.easeOut});
   myAnimTwo = TweenLite.from('#palmTitle', 1, {scale:1.8, delay:0, ease: Elastic.easeOut});
   myAnimTwo = TweenLite.from('#palmText', 1, {scale:1.5, delay:0, ease: Elastic.easeOut});
-<<<<<<< HEAD
   myAnimTwo = TweenLite.from('#palm-link', 1, {y:500, delay:.6, ease: Back.easeOut});
-=======
-  myAnimTwo = TweenLite.from('#palm-link', .6, {y:800, delay:.6, ease: Back.easeOut});
->>>>>>> 5670e6ddf03dca1f922cd62a3084156a40ecef3d
 }
 
 function nextSlideThree() {
@@ -90,7 +85,6 @@ function nextSlideThree() {
   
   btnClicked = toNextSlideThree;
 
-<<<<<<< HEAD
   // var dotThree = document.getElementsByClassName('dot-three');
 
   // dotClicked = nextSlideThree;
@@ -98,17 +92,10 @@ function nextSlideThree() {
   // if (dotClicked) {
   //   dotClicked.style.color = 'red';
 
-=======
-  if(btnClicked) {
-    console.log(btnClicked);
-    btnClicked.style.backgroundColor = "red";
-  }
->>>>>>> 5670e6ddf03dca1f922cd62a3084156a40ecef3d
 }
 
 
 
-<<<<<<< HEAD
   myAnimOne = TweenLite.from('.dolphin-blob', 2, {y:600, delay:0, ease: Elastic.easeOut});
   myAnimOne = TweenLite.from('.dolphin-img', .5, {x:-800, delay:0, ease: Power1.easeOut});
   myAnimOne = TweenLite.from('#dolphinTitle', 1, {scale:1.8, delay:0, ease: Elastic.easeOut});
@@ -117,9 +104,3 @@ function nextSlideThree() {
 
 }
 
-=======
-// var called current slide: whenever you click on a slide it says current slide:one
-// Compare the clicked slide with the current slide
-// class active to the button you clicked 
-// -- if current is number one and clicked one is number two then make the second one active
->>>>>>> 5670e6ddf03dca1f922cd62a3084156a40ecef3d
