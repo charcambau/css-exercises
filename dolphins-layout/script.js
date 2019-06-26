@@ -24,18 +24,18 @@ function changeSlide(e) {
     // the code after (show, hide,..) doesn't get executed
     return;
   }
+
+  // playTimeLine(lastSlide);
   // SHOW
   document.getElementById(nextSlide).style.display = 'grid';
   document.getElementById('btn-'+nextSlide).style.backgroundColor = "#2896E0";
   // HIDE
   document.getElementById(lastSlide).style.display = 'none';
   document.getElementById('btn-'+lastSlide).style.backgroundColor = "#BEFCFE";
-
-  playTimeLine(lastSlide);
-  
   //SAVE
   lastSlide = nextSlide;
 
+  
   playTimeline(nextSlide);
 }
 
@@ -54,13 +54,13 @@ function playTimeline(nextSlide) {
 }
 
 
-function playTimeLine (lastSlide) {
-  var timelineLastSlide = new TimelineLite();
+// function playTimeLine (lastSlide) {
+//   var timelineLastSlide = new TimelineLite();
 
-  timelineLastSlide.to('#' + lastSlide, .8, {x:-1200, ease: Power1.easeOut}), "0";
-  timelineLastSlide.to('#' + lastSlide + ' .blob', 2, {y:-600, ease: Elastic.easeOut}, "0");
-  timelineLastSlide.to('#' + lastSlide + ' .img', .5, {x:1200, ease: Power1.easeOut}, "0");
-  timelineLastSlide.to('#' + lastSlide + ' h2', 2, {scale:0, ease: Elastic.easeOut}, "0");
-  timelineLastSlide.to('#' + lastSlide + ' p', 2, {scale:0, ease: Elastic.easeOut}, "0" );
-  timelineLastSlide.to('#' + lastSlide + ' a', .6, {y:-800, ease: Back.easeOut}, "1");
-}
+//   timelineLastSlide.to('#' + lastSlide, .8, {x:700, ease: Power1.easeOut}), "0";
+//   timelineLastSlide.to('#' + lastSlide + ' .blob', 2, {y:600, ease: Elastic.easeOut}, "0");
+//   timelineLastSlide.to('#' + lastSlide + ' .img', .5, {x:-1200, ease: Power1.easeOut}, "0");
+//   timelineLastSlide.to('#' + lastSlide + ' h2', 2, {scale:0, ease: Elastic.easeOut}, "0");
+//   timelineLastSlide.to('#' + lastSlide + ' p', 2, {scale:0, ease: Elastic.easeOut}, "0" );
+//   timelineLastSlide.to('#' + lastSlide + ' a', .6, {y:800, ease: Back.easeOut}, "1");
+// }
