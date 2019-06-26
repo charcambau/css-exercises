@@ -15,6 +15,8 @@ btnThree.addEventListener('click', changeSlide);
 // assign the same function to all buttons
 
 function changeSlide(e) {
+  // console.log(e);
+
   nextSlide = e.target.dataset.name;
   // if the statement is true
   if ( lastSlide == nextSlide) {
@@ -28,9 +30,12 @@ function changeSlide(e) {
   // HIDE
   document.getElementById(lastSlide).style.display = 'none';
   document.getElementById('btn-'+lastSlide).style.backgroundColor = "#BEFCFE";
+
+  playTimeLine(lastSlide);
+  
   //SAVE
   lastSlide = nextSlide;
-  
+
   playTimeline(nextSlide);
 }
 
@@ -38,10 +43,24 @@ function playTimeline(nextSlide) {
   console.log(nextSlide);
 
   var timelineSlide = new TimelineLite();
-  timelineSlide.from('#' + nextSlide, .3, {x:600, ease: Power1.easeOut});
+  // timelineSlide.from('#' + lastSlide, 2, {x:-800, ease: Power1.easeOut}), "0";
+  timelineSlide.from('#' + nextSlide, .8, {x:700, ease: Power1.easeOut}), "0";
   timelineSlide.from('#' + nextSlide + ' .blob', 2, {y:600, ease: Elastic.easeOut}, "0");
-  timelineSlide.from('#' + nextSlide + ' .img', .5, {x:-800, ease: Power1.easeOut}, "0");
-  timelineSlide.from('#' + nextSlide + ' h2', 1, {scale:1.8, ease: Elastic.easeOut}, "0");
-  timelineSlide.from('#' + nextSlide + ' p', 1, {scale:1.5, ease: Elastic.easeOut}, "0" );
-  timelineSlide.from('#' + nextSlide + ' a', .6, {y:800, ease: Back.easeOut}, "0.5");
+  timelineSlide.from('#' + nextSlide + ' .img', .5, {x:-1200, ease: Power1.easeOut}, "0");
+  timelineSlide.from('#' + nextSlide + ' h2', 2, {scale:0, ease: Elastic.easeOut}, "0");
+  timelineSlide.from('#' + nextSlide + ' p', 2, {scale:0, ease: Elastic.easeOut}, "0" );
+  timelineSlide.from('#' + nextSlide + ' a', .6, {y:800, ease: Back.easeOut}, "1");
+
+}
+
+
+function playTimeLine (lastSlide) {
+  var timelineLastSlide = new TimelineLite();
+
+  timelineLastSlide.to('#' + lastSlide, .8, {x:-1200, ease: Power1.easeOut}), "0";
+  timelineLastSlide.to('#' + lastSlide + ' .blob', 2, {y:-600, ease: Elastic.easeOut}, "0");
+  timelineLastSlide.to('#' + lastSlide + ' .img', .5, {x:1200, ease: Power1.easeOut}, "0");
+  timelineLastSlide.to('#' + lastSlide + ' h2', 2, {scale:0, ease: Elastic.easeOut}, "0");
+  timelineLastSlide.to('#' + lastSlide + ' p', 2, {scale:0, ease: Elastic.easeOut}, "0" );
+  timelineLastSlide.to('#' + lastSlide + ' a', .6, {y:-800, ease: Back.easeOut}, "1");
 }
