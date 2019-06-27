@@ -1,0 +1,19 @@
+#circle {
+  margin: 200px auto;
+  width: 150px;
+  height: 150px;
+
+  background-color: black;
+  border-radius: 50%;
+}
+
+.container {
+  margin: 20px auto;
+  width: 400px;
+  height:400px;
+}
+
+.buttons {
+  width: 250px;
+  margin: 5px auto;
+}
