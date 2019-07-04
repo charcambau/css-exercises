@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+}
+
+path {
+  transition: fill 2s ease-in;
+}
+
+:root {
+  --myColorLeaf: #60b500;
+  --myColorSky: #876ee0;
+  --myColorRay: #fffaad;
+  --myColorSand: #fff893;
+}
+
+.leaf {
+  width: 150px;
+  height: auto;
+}
+
+.tree {
+  fill: #914c3b;
+}
+
+/* .sky {
+  transform: all 3s ease-in;
+} */
+
+.sun {
+  fill: #efcb88;
+
+  transform: 
+    scale(.8) 
+    translate(50%, -5%);
+
+  transition: transform 3s ease-in;
+}
+
+.sea {
+  fill: #564d7a;
+}
+             
+.stars {
+  fill: #fff893;
+  opacity: 0;
+
+  transition: opacity 3s ease-in-out;
+}
+
+.waves {
+  fill: #564d7a;
+}
+
+.island {
+  transition: transform 2s ease-in-out;
+}
+
+.sun-ray {
+  fill: #fffaad;
+  opacity: 1;
+
+  transition: opacity 3s ease-in-out;
+}
+
+#sunRayOne {
+  transform: translate(-10%);
+}
+
+#sunRayTwo {
+  transform: translate(30%);
+}
+
+#sunRayThree {
+  transform: translateY(10%);
+}
+
+#sunRayFour {
+  transform: translate(20%, 60%);
+}
+
+#sunRayFive {
+  transform: translate(50%, 10%);
+}
+
+#sunRaySix {
+  transform: translate(25%, -15%) rotate(15deg);
+}
+
+#sunRaySeven {
+  transform: translate(65%, -5%);
+}
+
+#sunRayEight {
+  transform: translate(80%, 10%);
+}

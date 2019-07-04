@@ -1,0 +1,28 @@
+.bg{
+  fill:#ff8fa1;
+}
+.cls-2{
+  fill:#ffc42c;
+}
+.sunglasses{
+  fill:#000400;
+}
+.sunglasses, .smile{
+  stroke:#d46af6;
+}
+.cls-3,.sun-connect,.smile,.sun-rays,.cls-7{
+  stroke-miterlimit:10;
+}
+.stroke-connect,.smile, .sun-rays,.cls-7{
+  fill:none;
+}
+.sun-connect{
+  stroke:#000400;
+  fill: none;
+}
+.sun-rays{
+  stroke:#ffe900;
+}
+.pink{
+  stroke:#ff0153;
+}
