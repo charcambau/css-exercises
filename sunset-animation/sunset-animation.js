@@ -4,6 +4,7 @@ var sky = document.querySelector('.sky');
 var island = document.getElementById('island');
 var islandBit = document.getElementById('islandBit');
 var stars = document.getElementsByClassName('stars');
+var waves = document.getElementsByClassName('waves');
 
 var leafOne = document.querySelector('#leafFarLeft');
 var leafTwo = document.querySelector('#leafLeft');
@@ -11,6 +12,7 @@ var leafThree = document.querySelector('#leafMiddle');
 var leafFour = document.querySelector('#leafRight');
 var leafFive = document.querySelector('#leafFarRight');
 
+var sunRays = document.getElementsByClassName('sun-ray');
 var sunRayOne = document.querySelector('#sunRayOne');
 var sunRayTwo = document.querySelector('#sunRayTwo');
 var sunRayThree = document.querySelector('#sunRayThree');
@@ -26,7 +28,7 @@ function sunSet () {
   sun.style.fill = '#ef8b88';
   sun.style.WebkitTransform = "translate(0px, 160px)"; 
 
-  sky.style.setProperty('--myColorSky', '#a84b83');
+  sky.style.fill = '#a84b83';
 
   island.style.setProperty('--myColorSand', '#eda200');
   islandBit.style.setProperty('--myColorSand', '#eda200');
@@ -37,24 +39,18 @@ function sunSet () {
   leafFour.style.setProperty('--myColorLeaf', '#00612c');
   leafFive.style.setProperty('--myColorLeaf', '#00612c');
 
-  // sunRayOne.style.setProperty('--myColorRay', 000);
-  // sunRayTwo.style.setProperty('--myColorRay', 000);
-  // sunRayThree.style.setProperty('--myColorRay', 000);
-  // sunRayFour.style.setProperty('--myColorRay', '#000');
-  // sunRayFive.style.setProperty('--myColorRay', '#000');
-  // sunRaySix.style.setProperty('--myColorRay', '#000');
-  // sunRaySeven.style.setProperty('--myColorRay', '#000');
-  // sunRayEight.style.setProperty('--myColorRay', '#000');
-
-
   sunRayOne.style.fill = "#000";
   sunRayTwo.style.fill = "#000";
-  sunRayThree.style.fill = "#000";
+  sunRayThree.style.opacity = 0;
   sunRayFour.style.opacity = 0;
-  sunRayFive.style.opacity = 0;
+  sunRayFive.style.fill = "#000"
   sunRaySix.style.opacity = 0;
   sunRaySeven.style.opacity = 0;
   sunRayEight.style.opacity = 0;
+
+  waves[0].style.WebkitTransform = "translate(-10px)";
+  waves[1].style.WebkitTransform = "translate(-10px)";
+  waves[2].style.WebkitTransform = "translate(-10px)";
 
   stars[0].style.opacity = 1;
   stars[1].style.opacity = 1;
@@ -65,5 +61,5 @@ function sunSet () {
   stars[6].style.opacity = 1;
   stars[7].style.opacity = 1;
   stars[8].style.opacity = 1;
-  console.log(stars);
+  // console.log(stars);
 }

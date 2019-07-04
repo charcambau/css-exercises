@@ -1,28 +1,32 @@
-.bg{
+:root {
+  --myColorSkin: #ffc42c;
+}
+
+.bg {
   fill:#ff8fa1;
 }
-.cls-2{
-  fill:#ffc42c;
-}
-.sunglasses{
+
+.sunglasses {
   fill:#000400;
 }
-.sunglasses, .smile{
+.sunglasses, .smile {
   stroke:#d46af6;
 }
-.cls-3,.sun-connect,.smile,.sun-rays,.cls-7{
+.cls-3,.sun-connect,.smile,.sun-rays,.cls-7 {
   stroke-miterlimit:10;
 }
-.stroke-connect,.smile, .sun-rays,.cls-7{
+.stroke-connect,.smile, .sun-rays,.cls-7 {
   fill:none;
 }
-.sun-connect{
+.sun-connect {
   stroke:#000400;
   fill: none;
 }
-.sun-rays{
+.sun-rays {
   stroke:#ffe900;
+
+  transition: transform 2s ease;
 }
-.pink{
+.pink {
   stroke:#ff0153;
 }

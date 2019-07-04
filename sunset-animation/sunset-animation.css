@@ -49,6 +49,7 @@ path {
 
 .waves {
   fill: #564d7a;
+  transition: transform 3s ease-in;
 }
 
 .island {
