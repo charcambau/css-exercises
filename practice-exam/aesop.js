@@ -31,6 +31,14 @@ function openMenu() {
   TweenMax.to('#read', .3, {delay: .3, x: 20, opacity: 1, ease: Power1.easeOut});
   TweenMax.to('#visit', .3, {delay: .4,x: 20, opacity: 1, ease: Power1.easeOut});
   TweenMax.to('#search', .3, {delay: .5, x: 20, opacity: 1, ease: Power1.easeOut});
+
+  TweenMax.to('#skin', .3, {x: -20, opacity: 0, ease: Power1.easeOut});
+  TweenMax.to('#hair', .3, {delay: .4, x: -20, opacity: 0, ease: Power1.easeOut});
+  TweenMax.to('#body', .3, {delay: .5,x: -20, opacity: 0, ease: Power1.easeOut});
+  TweenMax.to('#fragrance', .3, {delay: .6,x: -20, opacity: 0, ease: Power1.easeOut});
+  TweenMax.to('#home', .3, {delay: .7,x: -20, opacity: 0, ease: Power1.easeOut});
+  TweenMax.to('#kitsAndTravel', .3, {delay: .8,x: -20, opacity: 0, ease: Power1.easeOut});
+  TweenMax.to('#gifts', .3, {delay: .9,x: -20, opacity: 0, ease: Power1.easeOut}); 
 }
 
 function unfoldShop() {
