@@ -41,7 +41,7 @@ function changeSlide(e) {
 
 function playTimeline(nextSlide) {
   console.log(nextSlide);
-  function playTimeLine (lastSlide) {
+  function playTimeLine(lastSlide) {
     var timelineLastSlide = new TimelineLite();
   
     timelineLastSlide.to('#' + lastSlide, .8, {x:700, ease: Power1.easeOut}), "0";
