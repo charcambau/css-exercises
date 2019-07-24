@@ -103,8 +103,10 @@
   }
   
   function openMenu() {
-    document.getElementById('hiddenMenu').style.transform = 'translateY(0)';
-    document.getElementById('hiddenMenu').style.opacity = '1';
+    // document.getElementById('hiddenMenu').style.transform = 'translateY(0)';
+    // document.getElementById('hiddenMenu').style.opacity = '1';
+    TweenMax.to('#hiddenMenu', .2, {y: 0, ease: Power1.ease});
+    TweenMax.to('#hiddenMenu', .1, {opacity: 1, ease: Power1.ease});
   
 
     TweenMax.to(listItems[0], .8, {x: 0, ease: Power1.easeOut});
@@ -125,8 +127,8 @@
     // listItems[3].style.transform = 'translateX(100%)';
     // listItems[4].style.transform = 'translateX(100%)';
 
-    TweenMax.to('#hiddenMenu', .6, {y: -1000, delay: .6, ease: Power1.ease});
-    TweenMax.to('#hiddenMenu', .6, {opacity: 0, delay: .6, ease: Power1.ease});
+    TweenMax.to('#hiddenMenu', .6, {y: -10000, delay: .6, ease: Power1.ease});
+    TweenMax.to('#hiddenMenu', .2, {opacity: 0, delay: .6, ease: Power1.ease});
 
     TweenMax.to(listItems[0], .6, {x: 1000, ease: Power1.easeOut});
     TweenMax.to(listItems[1], .6, {x: 1000, delay: .1, ease: Power1.easeOut});
